@@ -1,0 +1,67 @@
+@use "../../styles/index.scss" as *;
+
+.Landing {
+  position: relative;
+  height: calc(100vh - 70px);
+  max-width: defaultUnit(1152);
+  margin: 0 auto;
+  // TODO
+  // 70px is the size of the header change
+  // this if header size changes or put it in the
+  // variable so that it always displays it correctly
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: defaultUnit(20);
+    width: 100%;
+    padding-top: defaultUnit(128);
+    padding-bottom: defaultUnit(128);
+    color: var(--color-text-dark);
+    position: relative;
+    height: 100%;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: defaultUnit(40) defaultUnit(20);
+      justify-content: unset;
+    }
+
+    @include mobile {
+      padding-top: defaultUnit(40);
+      padding-bottom: defaultUnit(20);
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: defaultUnit(20);
+    width: fit-content;
+    max-width: defaultUnit(512);
+
+    @include mobile {
+      margin-top: defaultUnit(20);
+    }
+  }
+
+  &__text {
+    font-size: defaultUnit(18);
+    color: inherit;
+  }
+
+  &__title {
+    font-size: clamp(defaultUnit(40), 10vw, defaultUnit(80));
+    max-width: defaultUnit(512);
+    margin: 0;
+    color: inherit;
+  }
+
+  &__actions {
+    display: flex;
+    gap: defaultUnit(10);
+  }
+}

@@ -1,0 +1,61 @@
+@use "../../styles/index.scss" as *;
+
+.Button {
+  all: unset;
+  color: #101010;
+  border: 2px solid #101010;
+  border-radius: defaultUnit(16);
+  cursor: pointer;
+  display: inline-flex;
+  gap: defaultUnit(5);
+  align-items: center;
+  font-size: defaultUnit(16);
+  transition:
+    background-color 0.3s ease-in,
+    border-color 0.3s ease-in;
+
+  &--large {
+    padding: defaultUnit(6) defaultUnit(16);
+    height: defaultUnit(40);
+  }
+
+  &--medium {
+    padding: defaultUnit(6) defaultUnit(16);
+    height: defaultUnit(28);
+  }
+
+  &--small {
+    padding: defaultUnit(6) defaultUnit(16);
+    height: defaultUnit(22);
+  }
+
+  &--outlined {
+    &:hover {
+      border-color: var(--color-text-orange);
+    }
+  }
+
+  &--filled {
+    color: #f5f0e8;
+    background-color: #343233;
+    border-color: rgb(90 86 88 / var(1));
+
+    svg {
+      path {
+        fill: #f5f0e8;
+      }
+    }
+
+    &:hover {
+      color: #343233;
+      background-color: var(--color-accent);
+      border-color: var(--color-accent);
+
+      svg {
+        path {
+          fill: #343233;
+        }
+      }
+    }
+  }
+}

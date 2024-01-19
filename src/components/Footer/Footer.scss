@@ -1,0 +1,18 @@
+@use "../../styles/index.scss" as *;
+
+.Footer {
+  padding-top: defaultUnit(20);
+  padding-bottom: defaultUnit(20);
+  background-color: var(--color-background-light);
+  color: var(--color-text-dark);
+
+  &__container {
+    max-width: defaultUnit(1150);
+    margin: 0 auto;
+
+    @include tablet {
+      padding-left: defaultUnit(20);
+      padding-right: defaultUnit(20);
+    }
+  }
+}

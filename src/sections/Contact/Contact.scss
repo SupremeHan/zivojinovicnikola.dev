@@ -1,0 +1,60 @@
+@use "../../styles/index.scss" as *;
+
+.Contact {
+  background-color: var(--color-background-dark);
+  color: var(--color-text-light);
+  padding-top: defaultUnit(128);
+  padding-bottom: defaultUnit(128);
+
+  &__container {
+    max-width: defaultUnit(1152);
+    margin: 0 auto;
+
+    @include tablet {
+      padding-left: defaultUnit(20);
+      padding-right: defaultUnit(20);
+    }
+  }
+
+  &__title {
+    font-size: defaultUnit(48);
+    margin-bottom: defaultUnit(20);
+  }
+
+  &__content {
+    display: flex;
+    gap: defaultUnit(20);
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    flex: 1;
+  }
+
+  &__links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    margin-bottom: defaultUnit(10);
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+
+    svg {
+      transform: rotate(315deg);
+      path {
+        fill: #fff;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

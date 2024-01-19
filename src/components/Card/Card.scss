@@ -1,0 +1,81 @@
+@use "../../styles/index.scss" as *;
+
+.Card {
+  max-width: defaultUnit(512);
+  padding: defaultUnit(20);
+  transition: background-color 0.2s ease-out;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+
+  @include mobile {
+    padding: defaultUnit(10);
+
+    background-color: #272324;
+    color: white;
+    cursor: default;
+
+    .Card__title {
+      color: inherit;
+    }
+
+    .Card__subTitle {
+      color: inherit;
+    }
+
+    .Card__description {
+      color: inherit;
+    }
+  }
+
+  &:hover {
+    background-color: #272324;
+    color: white;
+    cursor: default;
+
+    .Card__title {
+      color: var(--color-accent);
+    }
+
+    .Card__subTitle {
+      color: var(--color-text-light);
+    }
+
+    .Card__description {
+      color: var(--color-text-light);
+    }
+  }
+
+  &__title {
+    margin-bottom: defaultUnit(10);
+    font-size: defaultUnit(26);
+    color: var(--color-title-primary);
+  }
+
+  &__subTitle {
+    font-size: defaultUnit(18);
+    color: var(--color-title-primary);
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__description {
+    margin-top: defaultUnit(20);
+    color: var(--color-text-primary);
+  }
+
+  &__link {
+    display: flex;
+    align-self: flex-end;
+    text-decoration: underline;
+    margin-top: defaultUnit(10);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

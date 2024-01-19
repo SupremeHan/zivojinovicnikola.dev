@@ -1,0 +1,55 @@
+@use "../../styles/index.scss" as *;
+
+.InfoCard {
+  &:hover {
+    cursor: pointer;
+
+    .InfoCard__title {
+      border-color: rgba(255, 123, 0, 1);
+    }
+
+    .InfoCard__link {
+      border-color: rgba(255, 123, 0, 1);
+      transform: scale(1.2);
+
+      svg {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: defaultUnit(10);
+  }
+
+  &__title {
+    font-size: defaultUnit(20);
+    border-bottom: 2px solid rgba(255, 123, 0, 0.2);
+  }
+
+  &__description {
+    font-size: defaultUnit(16);
+    font-weight: 300;
+    max-width: defaultUnit(512);
+  }
+
+  &__link {
+    border: 2px solid var(--color-text-dark);
+    border-radius: 50%;
+    padding: defaultUnit(1);
+    transition: transform 0.3s ease-in;
+    margin-right: defaultUnit(5);
+
+    svg {
+      transition: transform 0.3s ease;
+    }
+  }
+}

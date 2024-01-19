@@ -1,0 +1,46 @@
+@use "../../styles/index.scss" as *;
+
+.Projects {
+  max-width: defaultUnit(1152);
+  margin: 0 auto;
+  padding-top: defaultUnit(128);
+  padding-bottom: defaultUnit(128);
+  color: var(--color-text-dark);
+
+  @include tablet {
+    padding-left: defaultUnit(20);
+    padding-right: defaultUnit(20);
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: defaultUnit(20);
+  }
+
+  &__title {
+    font-size: defaultUnit(36);
+  }
+
+  &__description {
+    max-width: defaultUnit(512);
+    margin-bottom: defaultUnit(40);
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: defaultUnit(24);
+
+    @include mobile {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+
+  &__infoCards {
+    display: flex;
+    flex-direction: column;
+    gap: defaultUnit(20);
+    margin-top: defaultUnit(40);
+  }
+}

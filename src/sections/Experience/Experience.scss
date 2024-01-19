@@ -1,0 +1,49 @@
+@use "../../styles/index.scss" as *;
+
+.Experience {
+  max-width: defaultUnit(1152);
+  margin: 0 auto;
+  padding-top: defaultUnit(100);
+  padding-bottom: defaultUnit(50);
+  color: var(--color-text-dark);
+
+  @include tablet {
+    padding-left: defaultUnit(20);
+    padding-right: defaultUnit(20);
+  }
+
+  &__title {
+    font-size: defaultUnit(36);
+    color: inherit;
+  }
+
+  &__subTitle {
+    font-size: defaultUnit(30);
+    margin-top: defaultUnit(40);
+    color: inherit;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: defaultUnit(20);
+    flex-wrap: wrap;
+    margin-top: defaultUnit(48);
+  }
+
+  &__tech {
+    margin-top: defaultUnit(48);
+
+    &__title {
+      font-size: defaultUnit(18);
+      font-weight: 500;
+      margin-bottom: defaultUnit(20);
+      color: inherit;
+    }
+
+    &__section {
+      display: flex;
+      gap: defaultUnit(20);
+    }
+  }
+}
