@@ -13,7 +13,7 @@ export function Landing() {
             and performant code. Furthermore, I'm also a huge fan of open-source.
           </p>
           <p className="Landing__text">
-            I have been building web apps for over 4 years and still love it. Learning something new
+            I have been building web apps for over 3 years and still love it. Learning something new
             every week. Currently focused on Frontend Web Development and a bit of Web Design.
           </p>
           <div className="Landing__actions">

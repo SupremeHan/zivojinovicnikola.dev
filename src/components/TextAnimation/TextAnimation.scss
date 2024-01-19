@@ -33,7 +33,7 @@
   }
 
   &__wrapper {
-    font-size: 60px;
+    font-size: defaultUnit(60);
     padding-bottom: 10px;
     position: absolute;
     animation: showTopText 1s;
@@ -43,7 +43,7 @@
     transform: translate(0, 100%);
 
     @include mobile {
-      font-size: 30px;
+      font-size: defaultUnit(30);
     }
   }
 

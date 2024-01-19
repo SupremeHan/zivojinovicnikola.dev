@@ -26,7 +26,7 @@
       flex-direction: column;
       align-items: flex-start;
       padding: defaultUnit(40) defaultUnit(20);
-      justify-content: unset;
+      justify-content: center;
     }
 
     @include mobile {
@@ -63,5 +63,9 @@
   &__actions {
     display: flex;
     gap: defaultUnit(10);
+
+    @include mobile {
+      margin-top: defaultUnit(10);
+    }
   }
 }
