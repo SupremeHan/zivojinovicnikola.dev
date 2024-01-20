@@ -11,7 +11,7 @@ export interface ProjectCardProps {
 export function ProjectCard({ title, description, link, image }: Readonly<ProjectCardProps>) {
   return (
     <article className="ProjectCard">
-      <a href={link}>
+      <a href={link} target="_blank" rel="noreferrer">
         <div className="ProjectCard__container">
           <div className="ProjectCard__imageWrapper">
             <img src={image} alt="" className="ProjectCard__image" />

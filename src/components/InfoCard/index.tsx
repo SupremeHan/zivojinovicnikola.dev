@@ -10,7 +10,7 @@ export interface InfoCardProps {
 export function InfoCard({ title, description, link }: Readonly<InfoCardProps>) {
   return (
     <article className="InfoCard">
-      <a href={link}>
+      <a href={link} target="_blank" rel="noreferrer">
         <div className="InfoCard__container">
           <div className="InfoCard__heading">
             <h3 className="InfoCard__title">{title}</h3>

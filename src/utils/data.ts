@@ -2,7 +2,10 @@ import { CardProps } from "../components/Card";
 import { InfoCardProps } from "../components/InfoCard";
 import { ProjectCardProps } from "../components/ProjectCard";
 
-import ProjectImage from "/Screenshot_2.png";
+import artistImage from "/artist.png";
+import darmarImage from "/darmar.png";
+import fitnessImage from "/fitness.png";
+import rqmImage from "/rqm.png";
 
 export const experienceCards = [
   {
@@ -53,19 +56,34 @@ export const experienceCards = [
 
 export const cards = [
   {
-    title: "Portfolio Site",
+    title: "Graphic Designer portfolio",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    link: "#",
-    image: ProjectImage,
+      "Portfolio made for a graphic designer student, so he can showcase his work. Made with pure javascript.",
+    link: "https://github.com/SupremeHan/ArtistPage",
+    image: artistImage,
   },
 
   {
-    title: "Portfolio Site 2",
+    title: "Fitness App",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    link: "#",
-    image: ProjectImage,
+      "Full stack web application, created as a part of personal project. You can create an account, have personal training plan, track your progress, read fitness related articles.",
+    link: "https://github.com/SupremeHan/fitnessApp-frontend",
+    image: fitnessImage,
+  },
+
+  {
+    title: "DarMar Catering",
+    description:
+      "Website for catering company Dar Mar. Showcase of their company, their menu and contact information.",
+    link: "https://github.com/SupremeHan/app-catering",
+    image: darmarImage,
+  },
+  {
+    title: "Requierement Model App",
+    description:
+      "Application based on PowerDesigner requirements model. Create and menage multiple projects and teams. Convert your class diagrams to java classes.",
+    link: "https://github.com/SupremeHan/rqm_app",
+    image: rqmImage,
   },
 ] as ProjectCardProps[];
 
@@ -85,6 +103,7 @@ export const infoCards = [
     title: "Shows tracker",
     description:
       "App made with React and tmdb api, you can search for tv shows, mark them as viewed or save them as favorite so you can have collection of your favorite shows at one place.",
+    link: "https://github.com/SupremeHan/shows-tracker",
   },
   {
     title: "Lyrics App",
