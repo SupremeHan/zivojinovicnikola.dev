@@ -6,6 +6,8 @@ import artistImage from "/artist.png";
 import darmarImage from "/darmar.png";
 import fitnessImage from "/fitness.png";
 import rqmImage from "/rqm.png";
+import planaImage from "/plan-a.png";
+import portfolioImage from "/portfolio.png";
 
 export const experienceCards = [
   {
@@ -56,13 +58,26 @@ export const experienceCards = [
 
 export const cards = [
   {
+    title: "PlanA moving company",
+    description: "Webiste created for a moving company in Belgrade.",
+    link: "https://github.com/SupremeHan/plan-a",
+    image: planaImage,
+  },
+  {
+    title: "Portfolio V2",
+    description:
+      "I would like to point out this portfoio because i think it really showcase my skills as a frontend developer. I've used best practitces that i learned so far and applied them on this project.",
+    link: "https://github.com/SupremeHan/zivojinovicnikola.dev",
+    image: portfolioImage,
+  },
+
+  {
     title: "Graphic Designer portfolio",
     description:
       "Portfolio made for a graphic designer student, so he can showcase his work. Made with pure javascript.",
     link: "https://github.com/SupremeHan/ArtistPage",
     image: artistImage,
   },
-
   {
     title: "Fitness App",
     description:
