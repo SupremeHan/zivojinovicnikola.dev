@@ -5,12 +5,12 @@
   height: 100%;
   border: solid;
   border-width: 2px;
-  border-color: var(--color-text-secondary);
+  border-color: rgba(118, 118, 118, 0.3);
   border-radius: defaultUnit(8);
   transition: border-color 0.3s ease-in-out;
 
   &:hover {
-    border-color: rgba(255, 123, 0, 1);
+    border-color: var(--color-background-dark);
     cursor: pointer;
 
     .ProjectCard__image {
@@ -18,11 +18,11 @@
     }
 
     .ProjectCard__title {
-      border-color: rgba(255, 123, 0, 1);
+      border-color: var(--color-background-dark);
     }
 
     .ProjectCard__link {
-      border-color: rgba(255, 123, 0, 1);
+      border-color: var(--color-background-dark);
       transform: scale(1.2);
 
       svg {
@@ -64,7 +64,7 @@
 
   &__title {
     font-size: defaultUnit(20);
-    border-bottom: 2px solid var(--color-text-secondary);
+    border-bottom: 2px solid rgba(118, 118, 118, 0.3);
   }
 
   &__description {
@@ -74,7 +74,7 @@
   }
 
   &__link {
-    border: 2px solid var(--color-text-dark);
+    border: 2px solid rgba(118, 118, 118, 0.3);
     border-radius: 50%;
     padding: defaultUnit(1);
     transition: transform 0.3s ease-in;
