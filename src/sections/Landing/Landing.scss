@@ -108,8 +108,7 @@
 
     & > * {
       animation-name: fadeInOpacity;
-      animation-duration: 1s;
-      transition: opacity 1.5s;
+      animation-duration: 2s;
     }
 
     @include mobile {
