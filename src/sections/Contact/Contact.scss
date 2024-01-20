@@ -1,8 +1,7 @@
 @use "../../styles/index.scss" as *;
 
 .Contact {
-  background-color: var(--color-background-dark);
-  color: var(--color-text-light);
+  color: var(--color-text-dark);
   padding-top: defaultUnit(128);
   padding-bottom: defaultUnit(128);
 
@@ -49,7 +48,7 @@
     svg {
       transform: rotate(315deg);
       path {
-        fill: #fff;
+        fill: #000;
       }
     }
 

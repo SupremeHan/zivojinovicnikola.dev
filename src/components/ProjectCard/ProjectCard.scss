@@ -5,7 +5,7 @@
   height: 100%;
   border: solid;
   border-width: 2px;
-  border-color: rgba(255, 123, 0, 0.5);
+  border-color: var(--color-text-secondary);
   border-radius: defaultUnit(8);
   transition: border-color 0.3s ease-in-out;
 
@@ -64,7 +64,7 @@
 
   &__title {
     font-size: defaultUnit(20);
-    border-bottom: 2px solid rgba(255, 123, 0, 0.2);
+    border-bottom: 2px solid var(--color-text-secondary);
   }
 
   &__description {

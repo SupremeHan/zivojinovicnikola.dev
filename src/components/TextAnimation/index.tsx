@@ -10,7 +10,7 @@ export function TextAnimation() {
         </div>
       </div>
       <div className="TextAnimation__bottom">
-        <p className="TextAnimation__text">All the things web!</p>
+        <p className="TextAnimation__text">All things web!</p>
       </div>
     </div>
   );

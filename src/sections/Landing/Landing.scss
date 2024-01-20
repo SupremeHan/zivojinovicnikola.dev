@@ -1,5 +1,36 @@
 @use "../../styles/index.scss" as *;
 
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .Landing {
   position: relative;
   height: calc(100dvh - 70px);
@@ -48,9 +79,20 @@
     }
   }
 
+  &__animate {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: defaultUnit(20);
+  }
+
   &__text {
     font-size: defaultUnit(18);
     color: inherit;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeInBottom;
+    animation-delay: 1.5s;
   }
 
   &__title {
@@ -63,6 +105,12 @@
   &__actions {
     display: flex;
     gap: defaultUnit(10);
+
+    & > * {
+      animation-name: fadeInOpacity;
+      animation-duration: 1s;
+      transition: opacity 1.5s;
+    }
 
     @include mobile {
       margin-top: defaultUnit(10);

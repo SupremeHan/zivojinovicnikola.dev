@@ -5,7 +5,6 @@
   margin: 0 auto;
   padding-top: defaultUnit(100);
   padding-bottom: defaultUnit(50);
-  color: var(--color-text-dark);
 
   @include tablet {
     padding-left: defaultUnit(20);
@@ -14,13 +13,13 @@
 
   &__title {
     font-size: defaultUnit(36);
-    color: inherit;
+    color: var(--color-text-secondary);
   }
 
   &__subTitle {
     font-size: defaultUnit(30);
     margin-top: defaultUnit(40);
-    color: inherit;
+    color: var(--color-text-secondary);
   }
 
   &__container {
@@ -29,6 +28,7 @@
     gap: defaultUnit(20);
     flex-wrap: wrap;
     margin-top: defaultUnit(48);
+    color: var(--color-text-dark);
   }
 
   &__tech {

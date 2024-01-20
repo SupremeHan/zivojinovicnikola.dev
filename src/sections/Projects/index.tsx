@@ -7,7 +7,9 @@ export function Projects() {
   return (
     <section className="Projects" id="projects">
       <div className="Projects__header">
-        <h2 className="Projects__title">Projects.</h2>
+        <h2 className="Projects__title">
+          Projects<strong>.</strong>
+        </h2>
         <p className="Projects__description">
           I love building projects and learning new things. Below you can find my personal projects
           I am most proud of proud of. All my projects are available on GitHub.

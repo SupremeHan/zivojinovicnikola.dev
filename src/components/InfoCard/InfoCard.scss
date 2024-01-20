@@ -5,11 +5,11 @@
     cursor: pointer;
 
     .InfoCard__title {
-      border-color: rgba(255, 123, 0, 1);
+      border-color: var(--color-text-dark);
     }
 
     .InfoCard__link {
-      border-color: rgba(255, 123, 0, 1);
+      border-color: var(--color-text-dark);
       transform: scale(1.2);
 
       svg {
@@ -32,7 +32,7 @@
 
   &__title {
     font-size: defaultUnit(20);
-    border-bottom: 2px solid rgba(255, 123, 0, 0.2);
+    border-bottom: 2px solid var(--color-text-secondary);
   }
 
   &__description {

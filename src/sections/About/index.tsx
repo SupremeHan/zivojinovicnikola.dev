@@ -4,7 +4,9 @@ export function About() {
   return (
     <div className="About" id="about">
       <div className="About__container">
-        <h2 className="About__title">About.</h2>
+        <h2 className="About__title">
+          About<strong>.</strong>
+        </h2>
         <div className="About__wrapper">
           <p className="About__text">
             Hey there! Let's get straight to it! I'm Casper, a motivated web developer and student

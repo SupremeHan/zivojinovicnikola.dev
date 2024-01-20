@@ -3,27 +3,25 @@
 .About {
   padding-top: defaultUnit(128);
   padding-bottom: defaultUnit(128);
-  background-color: var(--color-background-dark);
-  color: var(--color-text-light);
-
-  &__container {
-    max-width: defaultUnit(1152);
-    margin: 0 auto;
-  }
 
   @include tablet {
     padding-left: defaultUnit(20);
     padding-right: defaultUnit(20);
   }
 
-  &__wrapper {
-    max-width: defaultUnit(576);
-    color: var(--color-text-light);
+  &__container {
+    max-width: defaultUnit(1152);
+    margin: 0 auto;
   }
 
   &__title {
     font-size: defaultUnit(36);
-    color: inherit;
+    color: var(--color-text-secondary);
+  }
+
+  &__wrapper {
+    max-width: defaultUnit(576);
+    color: var(--color-text-dark);
   }
 
   &__text {
