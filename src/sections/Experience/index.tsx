@@ -17,6 +17,7 @@ import {
 } from "../../assets/icons";
 import ViteIcon from "../../assets/icons/Vite";
 import { Card } from "../../components/Card";
+import { experienceCards } from "../../utils/data";
 import "./Experience.scss";
 
 export function Experience() {
@@ -27,47 +28,16 @@ export function Experience() {
       </h2>
 
       <div className="Experience__container">
-        <Card
-          title="Software Engineer"
-          subTitle="Bright Marbles"
-          dateRange="May 2022 - Present"
-          description=" As a dedicated frontend developer at Bright Marbles, I've played a pivotal role in
-          enhancing our digital presence. Leveraging my expertise, I've contributed to the
-          creation of visually stunning and user-friendly web interfaces that seamlessly translate
-          design concepts into interactive experiences. Proficient in cutting-edge technologies,
-          I've been responsible for implementing responsive designs, optimizing performance, and
-          ensuring a cohesive and engaging online platform for our users. My work reflects a
-          commitment to delivering top-notch frontend solutions that align with and elevate Bright
-          Marbles's online identity."
-        />
-
-        <Card
-          title="Junior Software Engineer"
-          subTitle="Shandoola"
-          dateRange="October 2021 - April 2022"
-          description=" As a dedicated frontend developer at Shandoola, I've played a pivotal role in enhancing
-          our digital presence. Leveraging my expertise, I've contributed to the creation of
-          visually stunning and user-friendly web interfaces that seamlessly translate design
-          concepts into interactive experiences. Proficient in cutting-edge technologies, I've
-          been responsible for implementing responsive designs, optimizing performance, and
-          ensuring a cohesive and engaging online platform for our users. My work reflects a
-          commitment to delivering top-notch frontend solutions that align with and elevate
-          Shandoola's online identity."
-        />
-
-        <Card
-          title="Freelance"
-          subTitle="Personal projects"
-          dateRange="January 2021 - Present"
-          description="As a dedicated frontend developer at Shandoola, I've played a pivotal role in enhancing
-          our digital presence. Leveraging my expertise, I've contributed to the creation of
-          visually stunning and user-friendly web interfaces that seamlessly translate design
-          concepts into interactive experiences. Proficient in cutting-edge technologies, I've
-          been responsible for implementing responsive designs, optimizing performance, and
-          ensuring a cohesive and engaging online platform for our users. My work reflects a
-          commitment to delivering top-notch frontend solutions that align with and elevate
-          Shandoola's online identity."
-        />
+        {experienceCards.map((card, index) => (
+          <Card
+            key={index}
+            title={card.title}
+            subTitle={card.subTitle}
+            dateRange={card.dateRange}
+            description={card.description}
+            link={card.link}
+          />
+        ))}
       </div>
 
       {/* !!TODO: Refactor this and move it somewhere else  */}

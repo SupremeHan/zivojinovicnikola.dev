@@ -29,7 +29,7 @@
 
   &__container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: defaultUnit(20);
     flex-wrap: wrap;
     margin-top: defaultUnit(48);
