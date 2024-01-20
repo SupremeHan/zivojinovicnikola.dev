@@ -12,6 +12,11 @@
     padding-right: defaultUnit(20);
   }
 
+  @include mobile {
+    padding-top: defaultUnit(64);
+    padding-bottom: defaultUnit(64);
+  }
+
   &__header {
     display: flex;
     flex-direction: column;
