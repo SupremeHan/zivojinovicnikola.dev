@@ -1,30 +1,29 @@
-import { MenuIcon } from "../MenuIcon";
+import { useCycle } from "framer-motion";
+import { Sidebar, links } from "../Sidebar";
 import "./Header.scss";
+import MenuOpen from "../../assets/icons/MenuOpen";
+import { motion } from "framer-motion";
 
 export function Header() {
+  const [open, cycleOpen] = useCycle(false, true);
   return (
     <header className="Header">
       <div className="Header__container">
-        <button className="Header__logo">
-          <MenuIcon />
-        </button>
-        <nav role="navigation">
+        <motion.button onTap={() => cycleOpen()} className="Header__button">
+          <MenuOpen />
+        </motion.button>
+
+        <nav className="Header__navigation">
           <ul className="Header__list">
-            <li className="Header__list__item">
-              <a href="#about">About</a>
-            </li>
-            <li className="Header__list__item">
-              <a href="#experience">Experience</a>
-            </li>
-            <li className="Header__list__item">
-              <a href="#projects">Projects</a>
-            </li>
-            <li className="Header__list__item">
-              <a href="#contact">Contact</a>
-            </li>
+            {links.map(item => (
+              <li key={item.id} className="Header__list__item">
+                <a href={item.to}>{item.name}</a>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>
+      <Sidebar open={open} setOpen={cycleOpen} />
     </header>
   );
 }
