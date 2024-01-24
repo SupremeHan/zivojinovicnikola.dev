@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import "./Landing.scss";
 import classNames from "classnames";
 import RightArrow from "../../assets/icons/RightArrow";
+import { Button } from "../../components/Button";
 
 export function Landing() {
   return (
@@ -21,27 +22,24 @@ export function Landing() {
             </p>
           </div>
           <div className="Landing__actions">
-            <motion.button
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 2, duration: 1 }}
-              className={classNames("Landing__button", "Landing__button--filled")}
-            >
-              <a href="#about">
+            <Button size="medium" type="filled">
+              <a
+                href="#about"
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "5px",
+                }}
+              >
                 <span>About Me</span>
                 <span>
                   <RightArrow />
                 </span>
               </a>
-            </motion.button>
-            <motion.button
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 2, duration: 1 }}
-              className={classNames("Landing__button", "Landing__button--outlined")}
-            >
+            </Button>
+            <Button size="medium" type="outlined">
               <a href="#projects">Projects</a>
-            </motion.button>
+            </Button>
           </div>
         </div>
       </div>

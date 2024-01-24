@@ -57,6 +57,9 @@ export function Sidebar({ open, setOpen }: Readonly<SidebarProps>) {
               exit="closed"
               variants={sideVariants}
             >
+              <motion.button onTap={setOpen} variants={itemVariants} className="Sidebar__button">
+                <MenuClose />
+              </motion.button>
               <ul className="Sidebar__list">
                 {links.map(({ name, to, id }) => (
                   <motion.li
@@ -70,9 +73,6 @@ export function Sidebar({ open, setOpen }: Readonly<SidebarProps>) {
                   </motion.li>
                 ))}
               </ul>
-              <motion.button onTap={setOpen} variants={itemVariants} className="Sidebar__button">
-                <MenuClose />
-              </motion.button>
             </motion.div>
           </motion.aside>
         )}

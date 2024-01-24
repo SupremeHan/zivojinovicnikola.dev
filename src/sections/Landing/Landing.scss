@@ -110,38 +110,4 @@
       margin-top: defaultUnit(10);
     }
   }
-
-  &__button {
-    all: unset;
-    border: 2px solid var(--color-text-dark);
-    padding: defaultUnit(6) defaultUnit(16);
-    border-radius: defaultUnit(16);
-    cursor: pointer;
-    transition:
-      background-color 0.3s ease-in,
-      border-color 0.3s ease-in;
-
-    a {
-      display: inline-flex;
-      align-items: center;
-      gap: defaultUnit(5);
-    }
-
-    &--filled {
-      color: #f5f0e8;
-      background-color: #767676;
-
-      svg {
-        path {
-          fill: #f5f0e8;
-        }
-      }
-    }
-
-    &--outlined {
-      &:hover {
-        border-color: #767676;
-      }
-    }
-  }
 }

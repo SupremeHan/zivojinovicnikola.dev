@@ -2,14 +2,10 @@
 
 .Button {
   all: unset;
-  color: #101010;
-  border: 2px solid #101010;
+  border: 2px solid var(--color-text-dark);
+  padding: defaultUnit(6) defaultUnit(16);
   border-radius: defaultUnit(16);
   cursor: pointer;
-  display: inline-flex;
-  gap: defaultUnit(5);
-  align-items: center;
-  font-size: defaultUnit(16);
   transition:
     background-color 0.3s ease-in,
     border-color 0.3s ease-in;
@@ -31,31 +27,23 @@
 
   &--outlined {
     &:hover {
-      border-color: var(--color-text-orange);
+      border-color: var(--color-text-secondary);
     }
   }
 
   &--filled {
-    color: #f5f0e8;
-    background-color: #343233;
-    border-color: rgb(90 86 88 / var(1));
+    color: #fff;
+    background-color: var(--color-text-dark);
+    border-color: var(--color-text-secondary);
 
     svg {
       path {
-        fill: #f5f0e8;
+        fill: #fff;
       }
     }
 
     &:hover {
-      color: #343233;
-      background-color: var(--color-accent);
-      border-color: var(--color-accent);
-
-      svg {
-        path {
-          fill: #343233;
-        }
-      }
+      background-color: var(--color-text-secondary);
     }
   }
 }

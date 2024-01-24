@@ -12,7 +12,7 @@
     margin: 0 auto;
     max-width: defaultUnit(1150px);
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     padding-top: defaultUnit(10);
   }
 
@@ -31,10 +31,12 @@
 
   &__button {
     cursor: pointer;
-    margin: defaultUnit(20);
+    margin-top: defaultUnit(10);
+    margin-right: defaultUnit(20);
     border: none;
     background-color: transparent;
     height: defaultUnit(48);
+    align-self: flex-end;
 
     svg {
       line {
