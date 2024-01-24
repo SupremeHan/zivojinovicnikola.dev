@@ -1,6 +1,8 @@
-import { Button } from "../../components/Button";
 import { TextAnimation } from "../../components/TextAnimation";
+import { motion } from "framer-motion";
 import "./Landing.scss";
+import classNames from "classnames";
+import RightArrow from "../../assets/icons/RightArrow";
 
 export function Landing() {
   return (
@@ -19,12 +21,27 @@ export function Landing() {
             </p>
           </div>
           <div className="Landing__actions">
-            <Button type="filled" withIcon>
-              <a href="#about">About Me</a>
-            </Button>
-            <Button>
+            <motion.button
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 2, duration: 1 }}
+              className={classNames("Landing__button", "Landing__button--filled")}
+            >
+              <a href="#about">
+                <span>About Me</span>
+                <span>
+                  <RightArrow />
+                </span>
+              </a>
+            </motion.button>
+            <motion.button
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 2, duration: 1 }}
+              className={classNames("Landing__button", "Landing__button--outlined")}
+            >
               <a href="#projects">Projects</a>
-            </Button>
+            </motion.button>
           </div>
         </div>
       </div>

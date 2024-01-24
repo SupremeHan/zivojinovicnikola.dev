@@ -106,13 +106,45 @@
     display: flex;
     gap: defaultUnit(10);
 
-    & > * {
-      animation-name: fadeInOpacity;
-      animation-duration: 2s;
-    }
-
     @include mobile {
       margin-top: defaultUnit(10);
+    }
+  }
+
+  &__button {
+    all: unset;
+    border: 2px solid var(--color-text-dark);
+    padding: defaultUnit(6) defaultUnit(16);
+    border-radius: defaultUnit(16);
+    cursor: pointer;
+    transition:
+      background-color 0.3s ease-in,
+      border-color 0.3s ease-in;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: defaultUnit(5);
+    }
+
+    &--filled {
+      &:hover {
+        color: #f5f0e8;
+        background-color: #767676;
+        border-color: rgb(90 86 88 / var(1));
+
+        svg {
+          path {
+            fill: #f5f0e8;
+          }
+        }
+      }
+    }
+
+    &--outlined {
+      &:hover {
+        border-color: #767676;
+      }
     }
   }
 }
