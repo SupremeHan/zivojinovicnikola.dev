@@ -128,15 +128,12 @@
     }
 
     &--filled {
-      &:hover {
-        color: #f5f0e8;
-        background-color: #767676;
-        border-color: rgb(90 86 88 / var(1));
+      color: #f5f0e8;
+      background-color: #767676;
 
-        svg {
-          path {
-            fill: #f5f0e8;
-          }
+      svg {
+        path {
+          fill: #f5f0e8;
         }
       }
     }
