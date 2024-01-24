@@ -1,9 +1,7 @@
 import { TextAnimation } from "../../components/TextAnimation";
-import { motion } from "framer-motion";
-import "./Landing.scss";
-import classNames from "classnames";
 import RightArrow from "../../assets/icons/RightArrow";
 import { Button } from "../../components/Button";
+import "./Landing.scss";
 
 export function Landing() {
   return (
