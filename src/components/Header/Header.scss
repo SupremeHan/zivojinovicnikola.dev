@@ -20,23 +20,24 @@
     }
   }
 
-  &__logo {
-    all: unset;
+  &__navigation {
+    @include tablet {
+      display: none;
+    }
   }
 
   &__list {
     display: flex;
+    gap: defaultUnit(20);
 
-    @include mobile {
-      display: none;
+    @include tablet {
+      padding-right: defaultUnit(20);
     }
 
     &__item {
       position: relative;
       padding-top: defaultUnit(10);
-      padding-left: defaultUnit(20);
       padding-bottom: defaultUnit(10);
-      color: var(--color-text-dark);
 
       &:hover {
         cursor: pointer;
@@ -46,7 +47,6 @@
         content: "";
         position: absolute;
         width: 0%;
-        height: 1px;
         display: block;
         transition: all 0.3s ease;
         bottom: 15%;
@@ -54,24 +54,28 @@
 
       &:hover::after {
         width: 50%;
-        height: 1px;
+        height: defaultUnit(1);
         background-color: var(--color-text-dark);
       }
     }
   }
 
-  &__sidebar {
-    position: fixed;
-    top: defaultUnit(70);
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: #fff; /* Set your desired background color */
-    z-index: 1000;
-    transition: left 0.3s ease;
+  &__button {
+    all: unset;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    padding: defaultUnit(10);
 
-    &--active {
-      left: 0;
+    @include tablet {
+      padding-left: defaultUnit(0);
+    }
+
+    &:hover {
+      svg {
+        line {
+          stroke: pink;
+        }
+      }
     }
   }
 }
