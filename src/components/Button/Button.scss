@@ -32,13 +32,13 @@
   }
 
   &--filled {
-    color: #fff;
+    color: var(--color-text-light);
     background-color: var(--color-text-dark);
     border-color: var(--color-text-secondary);
 
     svg {
       path {
-        fill: #fff;
+        fill: var(--color-text-light);
       }
     }
 

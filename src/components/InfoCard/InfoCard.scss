@@ -5,11 +5,11 @@
     cursor: pointer;
 
     .InfoCard__title {
-      border-color: var(--color-text-dark);
+      border-color: var(--color-accent);
     }
 
     .InfoCard__link {
-      border-color: var(--color-text-dark);
+      border-color: var(--color-accent);
       transform: scale(1.2);
 
       svg {

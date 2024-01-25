@@ -1,8 +1,8 @@
 @use "../../styles/index.scss" as *;
 
 .Sidebar {
-  background: black;
-  color: white;
+  background: var(--color-background-dark);
+  color: var(--color-text-light);
   height: 100dvh;
   position: fixed;
   top: 0;
@@ -17,7 +17,7 @@
   }
 
   &__link {
-    color: #f9fafb;
+    color: var(--color-text-light);
     text-decoration: none;
     font-size: 1.75rem;
     font-weight: 600;
@@ -47,7 +47,7 @@
     &:hover {
       svg {
         line {
-          stroke: pink;
+          stroke: var(--color-accent);
         }
       }
     }

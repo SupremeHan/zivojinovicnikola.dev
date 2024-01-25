@@ -10,7 +10,7 @@
   transition: border-color 0.3s ease-in-out;
 
   &:hover {
-    border-color: var(--color-background-dark);
+    border-color: var(--color-accent);
     cursor: pointer;
 
     .ProjectCard__image {
@@ -18,11 +18,11 @@
     }
 
     .ProjectCard__title {
-      border-color: var(--color-background-dark);
+      border-color: var(--color-accent);
     }
 
     .ProjectCard__link {
-      border-color: var(--color-background-dark);
+      border-color: var(--color-accent);
       transform: scale(1.2);
 
       svg {

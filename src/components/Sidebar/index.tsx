@@ -65,7 +65,7 @@ export function Sidebar({ open, setOpen }: Readonly<SidebarProps>) {
                   <motion.li
                     className="Sidebar__link"
                     key={id}
-                    whileHover={{ color: "pink" }}
+                    whileHover={{ color: "#2c6e49" }}
                     variants={itemVariants}
                     onTap={setOpen}
                   >
