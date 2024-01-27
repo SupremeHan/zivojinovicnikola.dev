@@ -14,46 +14,51 @@ export const experienceCards = [
     title: "Software Engineer",
     subTitle: "Bright Marbles",
     dateRange: "May 2022 - Present",
-    description: `I actively contributed to a healthcare project from its initiation, 
-          collaborating with a 4-member frontend team.
-           We collectively shaped the project structure, 
-           and I played a key role in determining the best approach.
-            Crafting UI components such as tables, dropdowns, input fields,
-             modals, and graphs from scratch, I ensured a tailored and 
-             user-friendly experience. Rigorous unit testing, initially
-              using Jest and RTL, later migrated to Vite for enhanced 
-              performance, covered all critical app functionalities. 
-              My hands-on involvement and holistic approach contributed
-               to a reliable healthcare application that met stringent 
-               standards.`,
+    description: [
+      `Engaged in a healthcare project from the beginning with a 4-
+        member frontend team.`,
+      `Set up the project structure and collaborated on determining
+        the project's best approach.`,
+      `Constructed all UI components, including tables, dropdowns,
+        input/select fields, modals, and graphs from scratch.`,
+      `Covered all critical parts and functionalities of the app with unit
+        tests.`,
+      `Initially used Jest and RTL, later migrated to Vite for enhanced
+        performance.`,
+    ],
     link: "https://brightmarbles.io/",
   },
   {
     title: "Junior Software Engineer",
     subTitle: "Shandoola",
     dateRange: "October 2021 - April 2022",
-    description: `Simultaneously managing responsibilities for web and mobile applications
-     in the booking domain, I played a key role in developing features aligned with business
-     requirements. Addressing bugs and ensuring smooth functionality, I actively participated
-      in ideation sessions for future enhancements. This dual-focus approach allowed me to 
-      maintain a comprehensive view of the applications, contributing to their ongoing success.
-    Collaborating with senior colleagues, I established project infrastructure,
-     utilizing React-Redux for state management and implementing Material UI for 
-     seamless UI development. Taking charge of designing the landing page for a
-      streaming platform, I aimed to provide an engaging and user-friendly experience,
-       making content easily accessible to users.`,
+    description: [
+      `Worked concurrently on both web and mobile applications in
+        the booking domain.`,
+      `Developed features aligned with business requirements,
+        addressed bugs, and actively contributed to ideation sessions
+      for future enhancements.`,
+      `Collaborated with senior colleagues to establish project
+        infrastructure.`,
+      `Utilized React-Redux for state management and implemented
+        Material UI for seamless UI component development.`,
+      `Designed the whole look of the landing page for a streaming
+        platform.`,
+      `Made it easy for users to navigate and find what they're looking
+        for.`,
+    ],
     link: "https://shandoola.com/",
   },
-  {
-    title: "Personal projects",
-    subTitle: "Freelance",
-    dateRange: "January 2021 - Present",
-    description: `I've developed websites for local business in Belgrade like moving companies, woodwork shops.
-    Also I've done some projects that seemed fun to me. Sometimes I would be curious about new technology and I tried
-    to implemnt that into the real project. You can check out some of the clicking on the link below that will lead
-    you to my github account.`,
-    link: "https://github.com/SupremeHan",
-  },
+  // {
+  //   title: "Personal projects",
+  //   subTitle: "Freelance",
+  //   dateRange: "January 2021 - Present",
+  //   description: `I've developed websites for local business in Belgrade like moving companies, woodwork shops.
+  //   Also I've done some projects that seemed fun to me. Sometimes I would be curious about new technology and I tried
+  //   to implemnt that into the real project. You can check out some of the clicking on the link below that will lead
+  //   you to my github account.`,
+  //   link: "https://github.com/SupremeHan",
+  // },
 ] as CardProps[];
 
 export const cards = [

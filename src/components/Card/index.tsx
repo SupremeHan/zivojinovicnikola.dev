@@ -4,7 +4,7 @@ export interface CardProps {
   title: string;
   subTitle: string;
   dateRange: string;
-  description: string;
+  description: string[];
   link: string;
 }
 
@@ -17,7 +17,11 @@ export function Card({ title, subTitle, dateRange, description, link }: Readonly
         <h5 className="Card__subTitle">{dateRange}</h5>
       </div>
       <hr />
-      <p className="Card__description">{description}</p>
+      <ul className="Card__description">
+        {description.map(item => (
+          <li>{item}</li>
+        ))}
+      </ul>
       <p className="Card__link">
         <a href={link} target="_blank" rel="noreferrer">
           Visit Site
