@@ -1,4 +1,3 @@
-import { GithubIcon } from "../../assets/icons";
 import { InfoCard } from "../../components/InfoCard";
 import { ProjectCard } from "../../components/ProjectCard";
 import { cards, infoCards } from "../../utils/data";
