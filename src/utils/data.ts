@@ -49,16 +49,6 @@ export const experienceCards = [
     ],
     link: "https://shandoola.com/",
   },
-  // {
-  //   title: "Personal projects",
-  //   subTitle: "Freelance",
-  //   dateRange: "January 2021 - Present",
-  //   description: `I've developed websites for local business in Belgrade like moving companies, woodwork shops.
-  //   Also I've done some projects that seemed fun to me. Sometimes I would be curious about new technology and I tried
-  //   to implemnt that into the real project. You can check out some of the clicking on the link below that will lead
-  //   you to my github account.`,
-  //   link: "https://github.com/SupremeHan",
-  // },
 ] as CardProps[];
 
 export const cards = [
@@ -92,7 +82,7 @@ export const cards = [
   },
 
   {
-    title: "DarMar Catering",
+    title: "DarMar catering",
     description:
       "Website for catering company Dar Mar. Showcase of their company, their menu and contact information.",
     link: "https://github.com/SupremeHan/app-catering",

@@ -31,6 +31,12 @@
   &__description {
     max-width: defaultUnit(512);
     margin-bottom: defaultUnit(40);
+
+    a {
+      text-decoration: underline;
+      margin-left: defaultUnit(5);
+      cursor: pointer;
+    }
   }
 
   &__cards {

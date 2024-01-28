@@ -7,6 +7,15 @@
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+  padding: defaultUnit(10);
+  box-shadow:
+    rgba(118, 118, 118, 0.4) -5px 5px,
+    rgba(118, 118, 118, 0.3) -10px 10px,
+    rgba(118, 118, 118, 0.2) -15px 15px,
+    rgba(118, 118, 118, 0.1) -20px 20px,
+    rgba(118, 118, 118, 0.05) -25px 25px;
+  border-top: 2px solid var(--color-accent);
+  border-right: 2px solid var(--color-accent);
 
   &__wrapper {
     display: flex;

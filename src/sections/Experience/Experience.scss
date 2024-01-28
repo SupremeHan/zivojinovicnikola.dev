@@ -23,14 +23,14 @@
 
   &__subTitle {
     font-size: defaultUnit(30);
-    margin-top: defaultUnit(40);
+    margin-top: defaultUnit(60);
     color: var(--color-text-secondary);
   }
 
   &__container {
     display: flex;
     flex-direction: column;
-    gap: defaultUnit(20);
+    gap: defaultUnit(40);
     flex-wrap: wrap;
     margin-top: defaultUnit(48);
     color: var(--color-text-dark);

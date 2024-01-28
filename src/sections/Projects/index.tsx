@@ -1,3 +1,4 @@
+import { GithubIcon } from "../../assets/icons";
 import { InfoCard } from "../../components/InfoCard";
 import { ProjectCard } from "../../components/ProjectCard";
 import { cards, infoCards } from "../../utils/data";
@@ -12,7 +13,10 @@ export function Projects() {
         </h2>
         <p className="Projects__description">
           I love building projects and learning new things. Below you can find my personal projects
-          I am most proud of proud of. All my projects are available on GitHub.
+          I am most proud of proud of. All my projects are available on
+          <a href="https://github.com/SupremeHan" target="_blank" rel="noreferrer">
+            Github.
+          </a>
         </p>
       </div>
 
