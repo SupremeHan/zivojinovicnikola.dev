@@ -16,12 +16,15 @@
       rgba(118, 118, 118, 0.2) -15px 15px,
       rgba(118, 118, 118, 0.1) -20px 20px,
       rgba(118, 118, 118, 0.05) -25px 25px;
+    border-color: var(--color-accent);
+    border-bottom: none;
+    border-left: none;
   }
 
-  border-top: 2px solid var(--color-accent);
-  border-bottom: 2px solid var(--color-accent);
-  border-left: 2px solid var(--color-accent);
-  border-right: 2px solid var(--color-accent);
+  border-top: 2px solid var(--color-text-secondary);
+  border-bottom: 2px solid var(--color-text-secondary);
+  border-left: 2px solid var(--color-text-secondary);
+  border-right: 2px solid var(--color-text-secondary);
 
   &__wrapper {
     display: flex;
