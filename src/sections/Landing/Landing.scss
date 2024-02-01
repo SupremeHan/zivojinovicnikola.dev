@@ -73,10 +73,6 @@
     gap: defaultUnit(20);
     width: fit-content;
     max-width: defaultUnit(512);
-
-    @include mobile {
-      margin-top: defaultUnit(20);
-    }
   }
 
   &__animate {
