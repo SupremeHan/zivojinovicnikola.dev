@@ -37,6 +37,10 @@
 
   &__subTitle {
     font-size: defaultUnit(18);
+
+    @include mobile {
+      font-size: defaultUnit(16);
+    }
   }
 
   hr {
