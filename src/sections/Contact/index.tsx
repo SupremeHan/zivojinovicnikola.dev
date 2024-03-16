@@ -15,19 +15,23 @@ export function Contact() {
             don't have eight legs, and I promise not to scare you.
           </p>
           <div className="Contact__links">
-            <a className="Contact__link" href="#">
+            <a className="Contact__link" target="_blank" href="https://github.com/SupremeHan">
               Github
               <span>
                 <RightArrow />
               </span>
             </a>
-            <a className="Contact__link" href="#">
+            <a
+              className="Contact__link"
+              target="_blank"
+              href="https://www.linkedin.com/in/zivojinovicn/"
+            >
               LinkedIn
               <span>
                 <RightArrow />
               </span>
             </a>
-            <a className="Contact__link" href="#">
+            <a className="Contact__link" href="mailto:zivojinovic.z.nikola@gmail.com">
               Mail
               <span>
                 <RightArrow />
